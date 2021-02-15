@@ -1,5 +1,53 @@
 /* CSS files add styling rules to your content */
+.top {
+  display:flex;
+  position:fixed;
+  top:0;
+  left:0
+}
+.top>a{
+  margin: 10px;
+  font-size: 30px;
+}
+.row{
+  flex-wrap:wrap;
+}
+ [class*="col-"]{
+    flex-basis:100%;
+  }
+.title{
+  font-family: 'Reggae One', cursive;
+}
+@media only screen and (min-width: 768px) {
+.row{
+  display:flex;
+  text-align:center;
+}
+.col-1 {flex-basis: 8.33%;} /* width works too */
+.col-2 {flex-basis: 16.66%;}
+.col-3 {flex-basis: 25%;}
+.col-4 {flex-basis: 33.33%;}
+.col-5 {flex-basis: 41.66%;}
+.col-6 {flex-basis: 50%;}
+.col-7 {flex-basis: 58.33%;}
+.col-8 {flex-basis: 66.66%;}
+.col-9 {flex-basis: 75%;}
+.col-10 {flex-basis: 83.33%;}
+.col-11 {flex-basis: 91.66%;}
+.col-12 {flex-basis: 100%;}
+}
 
+.container{
+  max-width:1024px;
+  width:100%;
+  margin:0 auto;
+}
+.image{
+  border-radius:25px;
+  height:600px;
+  width:350px;
+  object-fit: cover;
+}
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
@@ -9,4 +57,8 @@ body {
 h1 {
   font-style: italic;
   color: Black;
+}
+p{
+  font-family: 'Inconsolata', monospace;
+  font-size:1.25rem;
 }
